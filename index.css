@@ -1,0 +1,14 @@
+.hyperlink{
+    color:blue;
+    text-decoration: underline;
+}
+.rankList td{
+    text-align: right;
+}
+
+.until{
+    display: none;
+}
+#new:checked ~ .until{
+    display: block;
+}

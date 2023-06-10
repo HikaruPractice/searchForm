@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <title>Yahoo!リアルタイム検索期間指定</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <p>Yahoo!リアルタイム検索で<br>
+            イベントボーダーを探す
+        </p>
+        <table class="rankList">
+            <tr>
+                <td>同タブ</td>
+                <td>別タブ</td>
+            </tr>
+            <tr>
+                <td><span class="hyperlink" onclick="search(50)">50位</span></td>
+                <td><span class="hyperlink" onclick="search(50,true)">50位</span></td>
+            </tr>
+            <tr>
+                <td><span class="hyperlink" onclick="search(100)">100位</span></td>
+                <td><span class="hyperlink" onclick="search(100,true)">100位</span></td>
+            </tr>
+            <tr>
+                <td><span class="hyperlink" onclick="search(1000)">1000位</span></td>
+                <td><span class="hyperlink" onclick="search(1000,true)">1000位</span></td>
+            </tr>
+            <tr>
+                <td><span class="hyperlink" onclick="search(2000)">2000位</span></td>
+                <td><span class="hyperlink" onclick="search(2000,true)">2000位</span></td>
+            </tr>
+            <tr>
+                <td><span class="hyperlink" onclick="search(5000)">5000位</span></td>
+                <td><span class="hyperlink" onclick="search(5000,true)">5000位</span></td>
+            </tr>
+            <tr>
+                <td><span class="hyperlink" onclick="search(10000)">10000位</span></td>
+                <td><span class="hyperlink" onclick="search(10000,true)">10000位</span></td>
+            </tr>
+        </table>
+        <input id="new" type="checkbox">
+        <label for="new">期間指定</label>
+        <table class="until inputTable">
+            <caption>次の時刻まで</caption>
+            <tr>
+                <td>
+                    年
+                </td>
+                <td>
+                    <input id="until_year">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    月
+                </td>
+                <td>
+                    <input id="until_month">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    日
+                </td>
+                <td>
+                    <input id="until_day">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    時
+                </td>
+                <td>
+                    <input id="until_hour">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    分
+                </td>
+                <td>
+                    <input id="until_minutes">
+                </td>
+            </tr>
+        </table>
+        <p>
+            ボーダーを調べるために<br>
+            指定期間の順位報告ツイートを探したいから<br>
+            画像付きで順位を含むツイートを時系列で探す。<br>
+        </p>
+    </body>
+</html>
